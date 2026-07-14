@@ -6,7 +6,7 @@ This repository contains the complete handover package for the chronic wound ass
 
 *   `VerdaSense/` — **Mobile Application:** A Flutter client displaying IME (Infection, Moisture, Edge) classification and side-by-side progression tracking over time.
 *   `WoundSegmenter/` — **Inference Backend:** Python Gradio server running MobileSAM segmentation and temperature-calibrated IME classification. Hosted live on [Hugging Face Spaces](https://huggingface.co/spaces/Micole07/TIMENet).
-*   `notebooks/` — **Model Training:** Cleaned Jupyter Notebooks outlining both Supervised and Semi-Supervised Learning pipelines.
+*   `notebooks/` — **Model Training:** Cleaned Jupyter Notebooks outlining both Supervised and Semi-Supervised Learning pipelines. *(Configured by default to run on Google Colab with paths pointing to `/content/drive/MyDrive/Wound_Assessment/`)*
 *   `models/` — **Trained Model Checkpoints:** Saved weights (`.pth` files) for supervised baseline and semi-supervised iterations.
 *   `data/` — **Data Metadata & Annotations:** Folds configurations and annotations. (Raw image datasets are stored externally on Google Drive).
 *   `docs/` — **Handover Documents:** Standard handover manuals and future direction briefs.
@@ -35,6 +35,7 @@ Redundant resizing steps inside `inference_transform` were eliminated, correctin
     *   `tsegnet_mask.zip` $\rightarrow$ Extract into `data/tsegnet_mask/`
     *   `original_code_archieve.zip` $\rightarrow$ Extract into `original_code_archieve/`
 3.  **Local Run:** Initialize the Android Emulator in Android Studio, configure the Dart SDK path, and execute `flutter run`.
+    *   *Note on Notebook Paths:* The Jupyter notebooks are configured for Google Colab and read/write from Google Drive at `/content/drive/MyDrive/Wound_Assessment/`. If running locally, simply update the base path variable at the top of each notebook to point to your local project directory.
 
 ---
 
