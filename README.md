@@ -59,3 +59,4 @@ The model was developed, validated, and tested using the following datasets:
 *   **[2]** Wang, C., Anisuzzaman, D.M., Williamson, V. et al. Fully automatic wound segmentation with deep convolutional neural networks. *Sci Rep* 10, 21897 (2020). https://doi.org/10.1038/s41598-020-78799-w
 *   **[3]** S. R. Oota, V. Rowtula, S. Mohammed, M. Liu and M. Gupta, "WSNet: Towards An Effective Method for Wound Image Segmentation," *2023 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)*, Waikoloa, HI, USA, 2023, pp. 3233-3242, doi: [10.1109/WACV56688.2023.00325](https://ieeexplore.ieee.org/document/10030591)
 
+Halo 
