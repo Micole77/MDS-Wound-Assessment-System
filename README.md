@@ -33,7 +33,6 @@ Redundant resizing steps inside `inference_transform` were eliminated, correctin
     *   `segmented_images.zip` $\rightarrow$ Extract into `data/segmented_images/`
     *   `original_data_and_mask.zip` $\rightarrow$ Extract into `data/original_data_and_mask/`
     *   `tsegnet_mask.zip` $\rightarrow$ Extract into `data/tsegnet_mask/`
-    *   `original_code_archieve.zip` $\rightarrow$ Extract into `original_code_archieve/`
 3.  **Local Run:** Initialize the Android Emulator in Android Studio, configure the Dart SDK path, and execute `flutter run`.
     *   *Note on Notebook Paths:* The Jupyter notebooks are configured for Google Colab and read/write from Google Drive at `/content/drive/MyDrive/Wound_Assessment/`. If running locally, simply update the base path variable at the top of each notebook to point to your local project directory.
 
