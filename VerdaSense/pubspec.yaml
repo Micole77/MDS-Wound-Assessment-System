@@ -1,0 +1,58 @@
+name: verdasense
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  bloc: ^9.1.0
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.5
+
+  # DateFormat
+  intl: ^0.18.1
+
+  # Camera and gallery image picking
+  camera: ^0.11.0+2
+  image_picker: ^1.1.2
+
+
+  user_repository:
+    path: packages/user_repository
+
+  home_repository:
+    path: packages/home_repository
+
+  wound_repository:
+    path: packages/wound_repository
+  
+  supabase_flutter: ^2.10.3
+
+  flutter_dotenv: ^5.1.0
+
+  shared_preferences: ^2.2.2
+
+  cached_network_image: ^3.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"

@@ -1,0 +1,26 @@
+# Ignore heavy image datasets in data/
+data/segmented_images/
+data/original_data_and_mask/
+data/tsegnet_mask/
+
+# Ignore original code archives if they contain heavy image files
+original_code_archieve/
+
+# Ignore Flutter build & config files
+VerdaSense/.env
+VerdaSense/build/
+VerdaSense/.dart_tool/
+VerdaSense/.flutter-plugins-dependencies
+VerdaSense/.pub-cache/
+VerdaSense/.pub/
+
+# Ignore python virtual environments and cache
+**/__pycache__/
+**/*.pyc
+**/.ipynb_checkpoints/
+**/venv/
+**/.env
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
