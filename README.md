@@ -29,9 +29,9 @@ Redundant resizing steps inside `inference_transform` were eliminated, correctin
 ## Setup & Handover Execution
 
 1.  **Configure `.env`:** Copy `VerdaSense/.env.example` to `VerdaSense/.env` and update the Supabase client keys and HuggingFace API base URL.
-2.  **External Datasets:** Download the datasets from the shared Drive links below, unzip them, and place them in their respective directories:
-    *   [ ] [segmented_images.zip](PASTE_GOOGLE_DRIVE_LINK_HERE) (Extract into `data/segmented_images/`)
-    *   [ ] [original_data_and_mask.zip](PASTE_GOOGLE_DRIVE_LINK_HERE) (Extract into `data/original_data_and_mask/`)
-    *   [ ] [tsegnet_mask.zip](PASTE_GOOGLE_DRIVE_LINK_HERE) (Extract into `data/tsegnet_mask/`)
-    *   [ ] [original_code_archieve.zip](PASTE_GOOGLE_DRIVE_LINK_HERE) (Extract into `original_code_archieve/`)
+2.  **External Datasets:** Open the [Shared Datasets Folder](PASTE_SHARED_FOLDER_LINK_HERE) on Google Drive/OneDrive, download the following ZIP files, and extract them into their respective directories:
+    *   `segmented_images.zip` $\rightarrow$ Extract into `data/segmented_images/`
+    *   `original_data_and_mask.zip` $\rightarrow$ Extract into `data/original_data_and_mask/`
+    *   `tsegnet_mask.zip` $\rightarrow$ Extract into `data/tsegnet_mask/`
+    *   `original_code_archieve.zip` $\rightarrow$ Extract into `original_code_archieve/`
 3.  **Local Run:** Initialize the Android Emulator in Android Studio, configure the Dart SDK path, and execute `flutter run`.
