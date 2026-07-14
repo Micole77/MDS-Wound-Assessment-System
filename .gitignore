@@ -21,6 +21,9 @@ VerdaSense/.pub/
 **/venv/
 **/.env
 
+# Ignore sensitive academic documents folder
+docs/
+
 # Ignore OS files
 .DS_Store
 Thumbs.db
