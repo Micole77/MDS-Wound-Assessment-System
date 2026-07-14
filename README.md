@@ -5,7 +5,7 @@ This repository contains the complete handover package for the chronic wound ass
 ## Repository Structure
 
 *   `VerdaSense/` — **Mobile Application:** A Flutter client displaying IME (Infection, Moisture, Edge) classification and side-by-side progression tracking over time.
-*   `WoundSegmenter/` — **Inference Backend:** Python Gradio server running MobileSAM segmentation and temperature-calibrated IME classification.
+*   `WoundSegmenter/` — **Inference Backend:** Python Gradio server running MobileSAM segmentation and temperature-calibrated IME classification. Hosted live on [Hugging Face Spaces](https://huggingface.co/spaces/Micole07/TIMENet).
 *   `notebooks/` — **Model Training:** Cleaned Jupyter Notebooks outlining both Supervised and Semi-Supervised Learning pipelines.
 *   `models/` — **Trained Model Checkpoints:** Saved weights (`.pth` files) for supervised baseline and semi-supervised iterations.
 *   `data/` — **Data Metadata & Annotations:** Folds configurations and annotations. (Raw image datasets are stored externally on Google Drive).
@@ -35,3 +35,20 @@ Redundant resizing steps inside `inference_transform` were eliminated, correctin
     *   `tsegnet_mask.zip` $\rightarrow$ Extract into `data/tsegnet_mask/`
     *   `original_code_archieve.zip` $\rightarrow$ Extract into `original_code_archieve/`
 3.  **Local Run:** Initialize the Android Emulator in Android Studio, configure the Dart SDK path, and execute `flutter run`.
+
+---
+
+## Deployment & Live Services
+
+*   **Live Cloud API URL:** `https://micole07-timenet.hf.space`
+*   **Hugging Face Spaces Repository:** [Micole07/TIMENet](https://huggingface.co/spaces/Micole07/TIMENet)
+
+---
+
+## Dataset References
+
+The model was developed, validated, and tested using the following datasets:
+1.  **Baseline Labeled Dataset:** 107 expert-annotated clinical chronic wound images classified under the TIME (Infection, Moisture, Edge) framework.
+2.  **Unlabeled Semi-Supervised Dataset:** Unlabeled wound dataset utilized for self-training rounds to generate pseudo-labels and bootstrap model representations.
+3.  **Annotations & Folds:** Cleaned folds splits and bounding box references are located inside `data/metadata/metadata_with_folds.csv` and `data/annotations/`.
+
