@@ -50,5 +50,11 @@ Redundant resizing steps inside `inference_transform` were eliminated, correctin
 The model was developed, validated, and tested using the following datasets:
 1.  **Baseline Labeled Dataset:** 107 expert-annotated clinical chronic wound images classified under the TIME (Infection, Moisture, Edge) framework.
 2.  **Unlabeled Semi-Supervised Dataset:** Unlabeled wound dataset utilized for self-training rounds to generate pseudo-labels and bootstrap model representations.
+    *   *Source:* The training dataset was obtained from the Kaggle [Wound Segmentation Images Dataset](https://www.kaggle.com/datasets/leoscode/wound-segmentation-images?resource=download).
 3.  **Annotations & Folds:** Cleaned folds splits and bounding box references are located inside `data/metadata/metadata_with_folds.csv` and `data/annotations/`.
+
+### Citations & Academic References
+*   **[1]** Thomas, S. Stock pictures of wounds. *Medetec Wound Database* (2020). http://www.medetec.co.uk/files/medetec-image-databases.html
+*   **[2]** Wang, C., Anisuzzaman, D.M., Williamson, V. et al. Fully automatic wound segmentation with deep convolutional neural networks. *Sci Rep* 10, 21897 (2020). https://doi.org/10.1038/s41598-020-78799-w
+*   **[3]** S. R. Oota, V. Rowtula, S. Mohammed, M. Liu and M. Gupta, "WSNet: Towards An Effective Method for Wound Image Segmentation," *2023 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)*, Waikoloa, HI, USA, 2023, pp. 3233-3242, doi: [10.1109/WACV56688.2023.00325](https://ieeexplore.ieee.org/document/10030591)
 
