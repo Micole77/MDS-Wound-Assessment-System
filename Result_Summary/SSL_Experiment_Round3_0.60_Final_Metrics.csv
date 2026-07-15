@@ -1,0 +1,5 @@
+Metric,Infection,Moisture,Edge
+Accuracy,0.7642,0.6262,0.8333
+Sensitivity (Recall),0.7143,N/A (Multi-class),0.8472
+Specificity,0.7887,N/A (Multi-class),0.8
+Macro F1-Score,0.7421,0.4754,0.8081
